@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Поддержка сообщества GitHub
+    url: https://github.com/orgs/community/discussions
+    about: Пожалуйста, задавайте и отвечайте на вопросы здесь.
+  - name: Премия за уязвимости безопасности GitHub
+    url: https://bounty.github.com/
+    about: Пожалуйста, сообщайте о проблемах безопасности здесь.
