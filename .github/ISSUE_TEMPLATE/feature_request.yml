@@ -1,0 +1,46 @@
+# .github/ISSUE_TEMPLATE/feature_request.yml
+
+name: Запрос на новую функцию
+description: Предложите новую функцию для этого проекта.
+title: "[Запрос функции]: "
+labels: ["функция", "улучшение"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за предложение функции! Пожалуйста, предоставьте детали ниже.
+  - type: input
+    id: feature_name
+    attributes:
+      label: Название функции
+      description: Какое название вы хотите предложить для функции?
+      placeholder: например, Новый интерфейс
+    validations:
+      required: true
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Описание функции
+      description: Подробно опишите функцию.
+      placeholder: Пожалуйста, предоставьте подробное описание функции.
+    validations:
+      required: true
+  - type: input
+    id: use_case
+    attributes:
+      label: Случай использования
+      description: Как будет использоваться эта функция?
+      placeholder: например, Для улучшения пользовательского опыта
+    validations:
+      required: true
+  - type: checkboxes
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Насколько важна эта функция?
+      options:
+        - label: Высокий приоритет
+        - label: Средний приоритет
+        - label: Низкий приоритет
+      validations:
+        required: true

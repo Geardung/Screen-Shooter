@@ -1,0 +1,65 @@
+# .github/ISSUE_TEMPLATE/bug_report.yml
+
+name: Сообщение об ошибке
+description: Сообщите об ошибке.
+title: "[Сообщение об ошибке]: "
+labels: ["ошибка", "требует анализа"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение об ошибке! Пожалуйста, заполните детали ниже.
+  - type: input
+    id: contact
+    attributes:
+      label: Контактные данные
+      description: Как с вами связаться, если нам нужна дополнительная информация?
+      placeholder: например, email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: Что случилось?
+      description: Опишите, что вы наблюдали и что ожидали.
+      placeholder: Расскажите, что вы видите!
+      value: "Произошла ошибка!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Версия
+      description: Какую версию нашего программного обеспечения вы используете?
+      options:
+        - 1.0.2 (По умолчанию)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: В каких браузерах возникает проблема?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+      validations:
+        required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Соответствующий вывод логов
+      description: Пожалуйста, вставьте любой соответствующий вывод логов.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Кодекс поведения
+      description: Отправляя этот отчет, вы соглашаетесь следовать нашему [Кодексу поведения](https://example.com).
+      options:
+        - label: Я согласен следовать Кодексу поведения этого проекта
+          required: true
