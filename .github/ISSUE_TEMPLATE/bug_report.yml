@@ -2,8 +2,8 @@
 
 name: Сообщение об ошибке
 description: Сообщите об ошибке.
-title: "[Сообщение об ошибке]: "
-labels: ["ошибка", "требует анализа"]
+title: "[БАГ]: "
+labels: ["баг", "требует анализа"]
 body:
   - type: markdown
     attributes:
